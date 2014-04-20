@@ -1,0 +1,23 @@
+<div xmlns="http://www.w3.org/1999/html">
+    <div id="gallery-wrapper">
+        <div id="gallery"><img class="output" src="<%= imageUrl %>" alt=""/>
+        </div>
+        <!-- end -->
+    </div>
+
+    <div class="post">
+        <h2 class="title"><a href="#"> <%= title %> </a></h2>
+
+        <p class="meta"><span class="date">Author: <input class="meta" id="myname" value="<%= author %>"></input></span>
+
+        <div style="clear: both;">&nbsp;</div>
+        <div class="entry">
+            <p><%= description %></p>
+
+        </div>
+        <button type="button" id="edit" class="btn btn-primary">Edit</button>
+
+        <input class="save" id="save" type="button" value="Save">
+    </div>
+    <div style="clear: both;">&nbsp;</div>
+</div>

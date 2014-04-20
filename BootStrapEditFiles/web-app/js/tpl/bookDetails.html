@@ -1,0 +1,23 @@
+<div>
+    <div id="gallery-wrapper">
+        <div id="gallery"><img class="img-rounded" src="<%= imageUrl %>" alt=""/>
+        </div>
+        <!-- end -->
+    </div>
+
+    <div class="post">
+        <h2 class="title"><a href="#"> <%= title %> </a></h2>
+
+        <p class="meta"><span class="date">Author: <%= author %></span>
+
+        <div style="clear: both;">&nbsp;</div>
+        <div class="entry">
+            <p><%= description %></p>
+
+        </div>
+
+        <button type="button" id="edit" class="btn btn-primary">Edit</button>
+        <input class="save" id="save" type="button" value="save">
+    </div>
+    <div style="clear: both;">&nbsp;</div>
+</div>

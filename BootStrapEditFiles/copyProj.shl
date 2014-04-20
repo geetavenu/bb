@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Please enter Name of the project"
+read proj
+dest=../$proj
+cp -r -f conf/*  $dest/grails-app/conf/
+cp -r -f controllers/*  $dest/grails-app/controllers/
+cp -r -f domain/*  $dest/grails-app/domain/
+#cp -r -f web-app/images/*  $dest/web-app/images/
+#cp -r -f web-app/css/*  $dest/web-app/css/
+cp -r -f web-app/*  $dest/web-app/
+#cp -r -f ../libs $dest/web-app/
+#cp -r -f web-app/templates  $dest/web-app/
+
+#cp -f web-app/AMDEdit.html  $dest/web-app/
+
+echo `pwd`

@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Please enter Name of the project"
+read proj
+dest=../$proj
+cp -r -f conf/*  $dest/grails-app/conf/
+cp -r -f domain/*  $dest/grails-app/domain/
+cp -r -f web-app/*  $dest/web-app/
+cp -r -f ../bootstapsrcfiles/* $dest/web-app/
+cp -r -f ../require.js $dest/web-app/js/
+
+echo `pwd`
